@@ -60,7 +60,8 @@
                 <div class="col l4 m6 s12 ">
                     <h5>Question 1</h5>
                     <h6>Your mind is always buzzing with unexplored ideads and plans.</h6>
-                    <select required>
+                    <select id="question-one" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -74,7 +75,8 @@
                 <div class="col l4 m6 s12">
                     <h5>Question 2</h5>
                     <h6>Generally speaking, you rely more on your experience than your imagination.</h6>
-                    <select required>
+                    <select id="question-two" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -87,7 +89,8 @@
                 <div class="col l4 m6 s12">
                     <h5>Question 3</h5>
                     <h6>You find it easy to stay relaxed and focused even when there is some pressure.</h6>
-                    <select required>
+                    <select id="question-three" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -101,7 +104,8 @@
                     <h5>Question 4</h5>
                     <h6>You rarely do something just out of sheer curiosity.
                     </h6>
-                    <select required>
+                    <select id="question-four" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -114,7 +118,8 @@
                 <div class="col l4 m6 s12">
                     <h5>Question 5</h5>
                     <h6>People can rarely upset you.</h6>
-                    <select required>
+                    <select id="question-five" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -127,7 +132,8 @@
                 <div class="col l4 m6 s12">
                     <h5>Question 6</h5>
                     <h6>It is often difficult for you to relate to other people’s feelings.</h6>
-                    <select required>
+                    <select id="question-six" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -140,7 +146,8 @@
                 <div class="col l4 m6 s12">
                     <h5>Question 7</h5>
                     <h6>In a discussion, truth should be more important than people’s sensitivities.</h6>
-                    <select required>
+                    <select id="question-seven" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -153,7 +160,8 @@
                 <div class="col l4 m6 s12">
                     <h5>Question 8</h5>
                     <h6>You rarely get carried away by fantasies and ideas.</h6>
-                    <select required>
+                    <select id="question-eight" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -167,7 +175,8 @@
                     <h5>Question 9</h5>
                     <h6>You think that everyone’s views should be respected regardless of whether they are supported by
                         facts or not.</h6>
-                    <select required>
+                    <select id="question-nine" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -180,7 +189,8 @@
                 <div class="col l4 m6 s12">
                     <h5>Question 10</h5>
                     <h6>You feel more energetic after spending time with a group of people.</h6>
-                    <select required>
+                    <select id="question-ten" required>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -200,29 +210,59 @@
                 </div>
 
             </div>
-        </form> <!--end of long form -->
+        </form>
+        <!--end of long form -->
         <hr>
-<!-- footer with api links -->
+        <!-- footer with api links -->
         <footer class="footer">
-                <div class="row">
-                    <p>
-                            <a href="/api/friendslist">API Friends List</a> |
-                            <a href="https://github.com/Baritonedad89/friend-finder"
-                            target="_blank">Github Repo</a>
-                    </p>
-                </div>
-            </footer>
-        
+            <div class="row">
+                <p>
+                    <a href="/api/friendslist">API Friends List</a> |
+                    <a href="https://github.com/Baritonedad89/friend-finder" target="_blank">Github Repo</a>
+                </p>
+            </div>
+        </footer>
+
     </div><!-- container end div-->
 
 
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('select');
             var instances = M.FormSelect.init(elems);
+        });
+    </script>
+    <script type="text/javascript">
+        $('#submitBtn').on('click', (event) => {
+            event.preventDefault();
+            const newFriend = {
+                name: `${$('#first_name').val().trim()} ${$('#last_name').val().trim()}`,
+                photo: $('#photoLink').val().trim(),
+                score: [
+                    $('#question-one').val().trim(),
+                    $('#question-two').val().trim(),
+                    $('#question-three').val().trim(),
+                    $('#question-four').val().trim(),
+                    $('#question-five').val().trim(),
+                    $('#question-six').val().trim(),
+                    $('#question-seven').val().trim(),
+                    $('#question-eight').val().trim(),
+                    $('#question-nine').val().trim(),
+                    $('#question-ten').val().trim(),
+
+                ]
+            }
+            console.log(newFriend)
+            $.post("/api/friendslist", newFriend, function (data) {
+                if (data) {
+                    alert('this should show your compatible friend')
+                }
+            })
         });
     </script>
 </body>
