@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../public/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend Finder</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-wrapper #311b92 deep-purple darken-4
+        ">
+            <a href="#" class="brand-logo center">Friend Finder</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="/api/friendslist">API Friends List</a></li>
+                <li><a href="https://github.com/Baritonedad89/friend-finder" target="_blank">Github Rep</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="/api/friendslist">API Friends List</a></li>
+        <li><a href="https://github.com/Baritonedad89/friend-finder" target="_blank">Github Repo</a></li>
+    </ul>
+    <!-- main body -->
+    <div class="container-fluid #eceff1 blue-grey lighten-5">
+        <div class="row">
+            <div class="col s12">
+                <h1 class='center-align'>Welcome to Friend Finder</h1>
+                <h3 class='center-align'>Answer a few questions...</h3>
+                <h3 class='center-align'>...then find the friend with the greatest compatibility!</h3>
+                <div class='center-align'>
+                    <a href="/survey" class="btn-floating pulse"><i class="material-icons">view_list</i></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+
+</html>
