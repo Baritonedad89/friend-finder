@@ -1,10 +1,6 @@
 const path = require('path');
 const friends = require('../data/friends')
 const arraySort = require('array-sort');
- 
-// // holds current user's scores 
-// let newFriendScores = [];
-// let everyoneElsesScore = [];
 
 module.exports = function (app) {
     // root level
@@ -21,18 +17,16 @@ module.exports = function (app) {
             results = 0;
             const currentFriend = friends[i];
             for (let j = 0; j < currentFriend.scores.length; j++) {
-                results += Math.abs(userCurrentData.scores[j] - currentFriend.scores[j]);
+                results += Math.abs(parseInt(userCurrentData.scores[j]) - parseInt(currentFriend.scores[j]));
             }
-            if(!bestMatch || bestMatch.compatScore > results) {
+            if (!bestMatch || bestMatch.compatScore > results) {
                 bestMatch = currentFriend;
-                bestMatch.compatScore = results;
+                bestMatch.compatibleScore = results;
             }
 
         };
-
-      
         return res.json(bestMatch);
-        
+
     })
 
     app.get('/survey', (req, res) => {
