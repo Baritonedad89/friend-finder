@@ -1,7 +1,7 @@
 const friends = [
     {
-        name: "Ahmed",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+        name: "Donald Trump",
+        photo: "https://pmcdeadline2.files.wordpress.com/2018/09/trump1.jpg?w=446&h=299&crop=1",
         scores: [
             "5",
             "1",
@@ -12,6 +12,23 @@ const friends = [
             "2",
             "5",
             "4",
+            "1"
+        ]
+    },
+
+    {
+        name: "Barack Obama",
+        photo: "http://specials-images.forbesimg.com/imageserve/5637de5ae4b0ffa7afe69130/280x425.jpg?fit=scale&background=000000",
+        scores: [
+            "5",
+            "1",
+            "3",
+            "4",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
             "1"
         ]
     },
@@ -79,7 +96,23 @@ const friends = [
             "5"
         ]
     },
-    
+    {
+        name: "Drake",
+        photo: "https://static.stereogum.com/uploads/2017/11/Drake-1510152261-640x619.jpg",
+        scores: [
+            "5",
+            "4",
+            "5",
+            "5",
+            "5",
+            "5",
+            "1",
+            "5",
+            "3",
+            "5"
+        ]
+    }
+
 ]
 
 module.exports = friends; 
