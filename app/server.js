@@ -12,7 +12,7 @@ require('../app/routing/apiRoutes')(app);
 require('../app/routing/htmlRoutes')(app);
 
 app.listen(PORT, () => {
-    console.log(`App listening on PORT ${PORT}!`);
+    console.log(`App listening on http://localhost:${PORT}!`);
 })
 
 module.e
