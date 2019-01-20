@@ -25,9 +25,10 @@ module.exports = function (app) {
             }
 
         };
+        friends.push(userCurrentData);
         return res.json(bestMatch);
 
-    })
+    });
 
     app.get('/survey', (req, res) => {
         res.sendFile(path.join(__dirname, "../public/survey.html"))
