@@ -19,7 +19,7 @@ module.exports = function (app) {
             for (let j = 0; j < currentFriend.scores.length; j++) {
                 results += Math.abs(parseInt(userCurrentData.scores[j]) - parseInt(currentFriend.scores[j]));
             }
-            if (!bestMatch || bestMatch.compatScore > results) {
+            if (!bestMatch || bestMatch.compatibleScore > results) {
                 bestMatch = currentFriend;
                 bestMatch.compatibleScore = results;
             }
