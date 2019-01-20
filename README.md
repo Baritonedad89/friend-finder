@@ -1,7 +1,7 @@
 # Friend Finder 
 ## Description 
 This is my friend finder app. This app uses a series of questions to find a compatible new best friend. 
-Link to the deployed app on Heroku: https://immense-everglades-31848.herokuapp.com/[1]
+Link to the deployed app on Heroku: https://immense-everglades-31848.herokuapp.com/
 
 ![](https://lh3.googleusercontent.com/-75h5aRPI2uHsX33cZVNwS2eXgPJmQjHY8oqzDpSaCk6Obion0zZciz98cyM0yYJKTFj3wDBIJdv9rpQwv_Phuvb0l3qaw_boKlV9DsqXyS90Gd3Pr2y7oxNZ7PMJdN7PMbutKSpcw=w2400)
 
